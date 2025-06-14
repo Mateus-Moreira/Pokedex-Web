@@ -9,7 +9,6 @@ Uma aplicação web que permite pesquisar, visualizar e explorar informações s
 - Chakra UI
 - React Router DOM
 - Framer Motion
-- @emotion/react e @emotion/styled
 - React Testing Library
 - Jest
 
