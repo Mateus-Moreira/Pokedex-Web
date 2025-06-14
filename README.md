@@ -42,7 +42,7 @@ Uma aplicação web que permite pesquisar, visualizar e explorar informações s
 - [x] Criar página de Itens
 - [ ] Adicionar textos alternativos em imagens
 - [ ] Criar página de detalhes do Pokémon
-- [ ] Adicionar paginação ou infinite scroll na listagem de Pokémons
+- [x] Adicionar paginação ou infinite scroll na listagem de Pokémons
 - [ ] Implementar busca e filtros de Pokémons
 - [ ] Adicionar testes de integração
 - [ ] Adicionar testes unitários

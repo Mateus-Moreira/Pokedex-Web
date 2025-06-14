@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Box, useColorMode } from '@chakra-ui/react';
 import PageTitle from '../components/PageTitle';
 import CardGrid from '../components/CardGrid';
-import SearchBar from '../components/SearchBar';
 
 const ItemList = () => {
     const [itens, setItens] = useState<any[]>([]);
@@ -28,16 +27,12 @@ const ItemList = () => {
 
     return (
         <Box>
-            <PageTitle>Item List</PageTitle>
-
-            {/* Barra de Busca */}
-            <Box mb={6}>
-                <SearchBar
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                />
-            </Box>
-
+            <PageTitle
+                searchTerm={searchTerm}
+                onSearchChange={(e) => setSearchTerm(e.target.value)}
+            >
+                Item List
+            </PageTitle>
             {/* Listagem de Itens Filtrados */}
             <CardGrid
                 items={filteredItems}

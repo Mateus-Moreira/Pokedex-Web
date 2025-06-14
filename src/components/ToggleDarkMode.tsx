@@ -9,8 +9,7 @@ const ToggleDarkMode = () => {
       aria-label="Toggle dark mode"
       icon={colorMode === 'light' ? <SunIcon /> : <MoonIcon />}
       onClick={toggleColorMode}
-      variant="outline"
-      colorScheme="whiteAlpha"
+      colorScheme="dark"
     />
   );
 };
