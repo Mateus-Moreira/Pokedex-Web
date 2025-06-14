@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# 📝 Lista de Tarefas - Pokédex Web (Portfólio)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🎯 Fase 1: Melhorias no Projeto Atual (Frontend)
 
-## Available Scripts
+- [ ] Criar um README completo e profissional
+- [ ] Adicionar screenshots (Light Mode e Dark Mode)
+- [ ] Melhorar as mensagens dos commits (usar padrão: feat:, fix:, chore:, etc)
+- [ ] Fazer o deploy no Vercel ou Netlify
+- [ ] Adicionar o link do deploy no README
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🎯 Fase 2: Criar o Backend (Node.js + TypeScript)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [ ] Iniciar um novo repositório backend
+- [ ] Criar o `.gitignore` com boas práticas
+- [ ] Modelar as entidades principais (User, Pokemon, Order, etc.)
+- [ ] Configurar Prisma + PostgreSQL + Docker
+- [ ] Implementar autenticação com JWT
+- [ ] Criar endpoints básicos:
+  - [ ] /users – cadastro e login
+  - [ ] /favorites – salvar Pokémons favoritos
+  - [ ] /pokemons – cache ou mock de Pokémons
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## 🎯 Fase 3: Integração Front + Back
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [ ] Conectar o Frontend com o Backend
+- [ ] Implementar login/cadastro no Front
+- [ ] Criar controle de sessão no Front (JWT ou Context API)
+- [ ] Testar fluxo completo (Login → Favoritar → Listar favoritos)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🎯 Fase 4: Extras para Destacar no Portfólio
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [ ] Adicionar testes unitários no Backend (Jest ou Vitest)
+- [ ] Criar Docker Compose para subir tudo junto
+- [ ] Configurar CI/CD simples (GitHub Actions)
+- [ ] Melhorar responsividade no Front
+- [ ] Adicionar paginação ou busca por Pokémons no Front
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🎯 Fase 5: Visibilidade
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [ ] Atualizar o LinkedIn com o projeto
+- [ ] Fazer um post mostrando o projeto
+- [ ] Adicionar o projeto ao currículo
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+✅ *Marque cada tarefa conforme for concluindo!*
