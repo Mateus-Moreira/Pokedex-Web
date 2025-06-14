@@ -77,14 +77,14 @@ const PokemonList = () => {
         if (node) observer.current.observe(node);
     }, [loading, hasMore]);
 
-    // Filtrar os itens com base no termo de busca
-    const filteredItems = pokemons.filter(pokemon =>
-        pokemon.name.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-
     // Função para buscar Pokémon por nome na API
     const handleSearch = async (value: string) => {
-        if (!value) return;
+        // Se a busca estiver vazia, limpa o resultado da busca e volta para o modo padrão
+        if (!value) {
+            setSearchApiResult(null);
+            setSearchError(null);
+            return;
+        }
         setLoading(true);
         setSearchError(null);
         try {
@@ -106,8 +106,9 @@ const PokemonList = () => {
         setLoading(false);
     };
 
+    // Remove o filtro em tempo real, busca só ao pressionar Enter
     // Se houver resultado de busca, mostra só ele
-    const itemsToShow = searchApiResult !== null ? searchApiResult : filteredItems;
+    const itemsToShow = searchApiResult !== null ? searchApiResult : pokemons;
 
     return (
         <Box>
@@ -115,10 +116,10 @@ const PokemonList = () => {
             <Box position="sticky" top={0} zIndex={100} bg="white" _dark={{ bg: 'gray.800' }}>
                 <PageTitle
                     searchTerm={searchTerm}
-                    onSearchChange={(e) => setSearchTerm(e.target.value)}
+                    setSearchTerm={setSearchTerm}
                     onSearch={handleSearch}
                 >
-                    Pokémon List
+                    Pokémons
                 </PageTitle>
             </Box>
             {/* Listagem de Pokémons Filtrados ou resultado da busca */}

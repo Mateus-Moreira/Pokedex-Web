@@ -1,4 +1,4 @@
-import { Heading, Box, useColorMode, Flex } from '@chakra-ui/react';
+import { Heading, Box, Flex } from '@chakra-ui/react';
 import React from 'react';
 import ToggleDarkMode from './ToggleDarkMode';
 import SearchBar from './SearchBar';
@@ -6,11 +6,11 @@ import SearchBar from './SearchBar';
 interface PageTitleProps {
   children: React.ReactNode;
   searchTerm: string;
-  onSearchChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  setSearchTerm: (value: string) => void;
   onSearch?: (value: string) => void;
 }
 
-const PageTitle = ({ children, searchTerm, onSearchChange, onSearch }: PageTitleProps) => {
+const PageTitle = ({ children, searchTerm, setSearchTerm, onSearch }: PageTitleProps) => {
   return (
     <Box
       bgGradient="linear(to-r, red.400, blue.400)"
@@ -29,7 +29,7 @@ const PageTitle = ({ children, searchTerm, onSearchChange, onSearch }: PageTitle
       <Flex align="center" gap={2}>
         <SearchBar
           value={searchTerm}
-          onChange={onSearchChange}
+          onChange={(e) => setSearchTerm(e.target.value)}
           onSearch={onSearch}
           placeholder="Buscar Pokémon..."
         />
