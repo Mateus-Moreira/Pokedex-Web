@@ -2,7 +2,7 @@
 
 ## 🎯 Fase 1: Melhorias no Projeto Atual (Frontend)
 
-- [X] Criar um README completo e profissional
+- ✅ Criar um README completo e profissional
 - [ ] Adicionar screenshots (Light Mode e Dark Mode)
 - [ ] Melhorar as mensagens dos commits (usar padrão: feat:, fix:, chore:, etc)
 - [ ] Fazer o deploy no Vercel ou Netlify
